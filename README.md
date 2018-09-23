@@ -1,2 +1,2 @@
 # css-example
-CSS example to find some words in an html file
+CSS example to find words in an html file
