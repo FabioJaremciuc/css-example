@@ -1,0 +1,46 @@
+/*Target value 1 - green color */
+#container ul li ul li + li {
+  padding: 5px;
+  background-color: green;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+/*Target value 2 - gray color */
+div:nth-child(2) ul li ul li + li {
+  padding: 5px;
+  background-color: gray;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+/*Target value 3 - blue color */
+p:last-child {
+  padding: 5px;
+  background-color: darkblue;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+/*Target value 4 - yellow color */
+li[style="font-weight:bold"] {
+  padding: 5px;
+  background-color: yellow;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+/*All even li elements inside UL on line 44 of sample.html - purple color */
+div:nth-child(3) ul {
+  background-color: purple;
+  display: inline-block;
+}
+
+/*Links, that leads to http://mydomain.com/link-to-listing. Only 4 links should be selected - red color */
+a[href="http://mydomain.com/link-to-listing"] div:nth-child(3n+5) {
+  padding: 5px;
+  background-color: red;
+  display: inline-block;
+  margin-bottom: 3px;
+
+}
